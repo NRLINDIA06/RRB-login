@@ -1,0 +1,15 @@
+let a = Math.floor(Math.random()*10);
+let b = Math.floor(Math.random()*10);
+document.getElementById("captcha").innerHTML = a + " + " + b + " = ?";
+
+function checkLogin(){
+  let user = document.getElementById("user").value;
+  let pass = document.getElementById("pass").value;
+  let cap = document.getElementById("captchaInput").value;
+
+  if(user=="1610228292" && pass=="H32402056306" && cap == (a+b)){
+    window.location = "file.pdf";
+  } else {
+    alert("Wrong details");
+  }
+}

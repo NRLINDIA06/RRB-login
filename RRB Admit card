@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="logo.png" width="120"><br><br>
+
+<h2>Login to View PDF</h2>
+
+<input type="text" id="user" placeholder="Username"><br>
+<input type="password" id="pass" placeholder="Password"><br>
+
+<p id="captcha"></p>
+<input type="text" id="captchaInput" placeholder="Enter Captcha"><br>
+
+<button onclick="checkLogin()">Login</button>
+
+<script src="script.js"></script>
+</body>
+</html>
